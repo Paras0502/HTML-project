@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shining Blog</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Add this CSS to style the Get Started button */
+    .get-started-section {
+        text-align: center;
+        margin-top: 50px;
+        padding: 30px;
+        background-color: #222;
+    }
+
+    .get-started-button {
+        padding: 15px 30px;
+        background-color: black;
+        color: white;
+        text-decoration: none;
+        font-size: 1.5em;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    .get-started-button:hover {
+        background-color: grey; /* Lighter shade on hover */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="Shining_Blog.html" id="homeLink">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="solutions.html">Solutions</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="company.html">Company</a></li>
+        <li><a href="careers.html">Careers</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Inside Design: Stories and Interviews</h1>
+    <p>Subscribe to learn about new product features, the latest in technology, and updates.</p>
+    <form id="subscribeForm">
+      <input type="email" id="emailInput" placeholder="Enter your email">
+      <button type="submit">Subscribe</button>
+    </form>
+    <p id="message"></p>
+  </section>
+
+  <section class="blog-posts">
+    <h2>Recent Blog Posts</h2>
+    <div class="posts">
+      <article>
+        <img src="lll.jpg" alt="Post 1">
+        <h3><a href="conversations.html">Conversations with London Makr & Co.</a></h3>
+        <p>Design, Research, Interviews</p>
+      </article>
+
+      <article>
+        <img src="222.jpg" alt="Post 2">
+        <h3><a href="relentless_perfection.html">A Relentless Pursuit of Perfection</a></h3>
+        <p>Design, Research</p>
+      </article>
+
+      <article>
+        <img src="333.jpg" alt="Post 3">
+        <h3><a href="successful_business.html">How to Run a Successful Business with Your Partner</a></h3>
+        <p>Business, Research</p>
+      </article>
+
+      <article>
+        <img src="444.jpg" alt="Post 4">
+        <h3><a href="food_matters.html">Why Food Matters: Disease Prevention & Treatment</a></h3>
+        <p>Health</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Get Started Section at the bottom -->
+  <section class="get-started-section">
+    <a href="create_blog.html" class="get-started-button">Get Started</a>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

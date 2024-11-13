@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Blog</title>
+  <style>
+    /* General Styles for Create Blog Page */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-color: black;
+        padding: 15px;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        margin: 0 10px;
+        font-size: 1.2em;
+    }
+
+    nav ul li a:hover, nav ul li a.active {
+        background-color: #8B0000; /* Blood red on hover */
+        border-radius: 5px;
+    }
+
+    /* Create Blog Section */
+    .create-blog-section {
+        padding: 40px;
+        background-color: black; /* Black background for the form */
+        max-width: 800px;
+        margin: 50px auto;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+
+    .create-blog-section h1 {
+        text-align: center;
+        color: #8B0000; /* Blood red color for the heading */
+        margin-bottom: 30px;
+    }
+
+    .create-blog-section form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .create-blog-section label {
+        font-weight: bold;
+        color: #fff; /* White text for labels */
+    }
+
+    .create-blog-section input,
+    .create-blog-section textarea {
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 1em;
+        background-color: #333; /* Dark background for input fields */
+        color: #fff; /* White text inside input fields */
+    }
+
+    .create-blog-section input:focus,
+    .create-blog-section textarea:focus {
+        border-color: #8B0000; /* Blood red border when focused */
+        outline: none;
+    }
+
+    .create-blog-section button.submit-button {
+        padding: 12px 20px;
+        background-color: #8B0000; /* Blood red button color */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1.2em;
+        transition: background-color 0.3s ease;
+    }
+
+    .create-blog-section button.submit-button:hover {
+        background-color: rgb(139, 0, 0); /* Darker blood red on hover */
+    }
+
+    /* Responsive Design for Mobile */
+    @media (max-width: 768px) {
+        .create-blog-section {
+            padding: 20px;
+        }
+
+        .create-blog-section h1 {
+            font-size: 1.8em;
+        }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="Shining_Blog.html">Home</a></li>
+        <li><a href="create_blog.html" class="active">Create Blog</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="solutions.html">Solutions</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="company.html">Company</a></li>
+        <li><a href="careers.html">Careers</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="create-blog-section">
+    <h1>Create Your Blog</h1>
+    <form id="createBlogForm">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="title">Blog Title</label>
+      <input type="text" id="title" name="title" placeholder="Enter blog title" required>
+
+      <label for="content">Content</label>
+      <textarea id="content" name="content" rows="5" placeholder="Write your blog content here..." required></textarea>
+
+      <button type="submit" class="submit-button">Submit Blog</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

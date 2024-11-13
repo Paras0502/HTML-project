@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+    border-bottom: 1px solid gray;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:visited {
+    color: white;
+}
+
+nav ul li a:hover {
+    color: lightgray;
+}
+
+nav .btn {
+    background-color: deeppink;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: rgb(16, 1, 1);
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.hero form input {
+    padding: 10px;
+    border: none;
+    width: 250px;
+    margin-right: 10px;
+}
+
+.hero form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: deeppink;
+    color: white;
+    cursor: pointer;
+}
+
+.blog-posts {
+    padding: 50px 20px;
+    background-color: rgb(49, 7, 7);
+}
+
+.blog-posts h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.posts {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.posts article {
+    background-color: rgb(18, 14, 14);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 0 10px deeppink;
+    transition: box-shadow 0.3s ease;
+}
+
+.posts article:hover {
+    box-shadow: 0 0 30px deeppink;
+}
+
+.posts img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.posts h3 {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: darkgray;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .posts {
+        flex-direction: column;
+    }
+
+    .posts article {
+        width: 100%;
+    }
+}
